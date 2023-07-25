@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* PROGRESS BAR */
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2rem;
+  color: #ff0062;
+  border: 1px solid #a927f5;
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+button {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: #BF1363;
+    border: 0.2rem solid #191923;
+    border-radius: 0.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    box-shadow: 2px 2px 2px black;
+}
+
+button:focus {
+    outline: none;
+}
+button:hover,
+button:active {
+    background: #fbfef9;
+    border-color: #a927f5;
+    cursor: pointer;
+}
+
+#health-levels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #191923;
+  height: 15vh;
+}
+
+#canvas {
+  height: 60vh;
+  background-color: #0e79b2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#controls {
+    background-color: #F39237;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.player {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fbfef9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.progress-container {
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #bf1363;
+  overflow: hidden;
+}
+
+.antonio {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10rem;
+  margin-left: 2rem;
+}
+
+.the-devil {
+  width: 10%;
+  right: 20px;
+  margin-right: 2rem;
+}
+
+#player1 {
+    display: flex;
+    justify-content: flex-start;   
+}
+#player2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.animate {
+  animation: jump 2s ease-in-out forwards;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateX(-0rem);
+  } 
+  50% {
+    transform: translateX(53rem);
+  }
+}
+
+.animateD {
+  animation: jumpD 2s ease-in-out forwards;
+}
+
+.animateH {
+  animation: rotateA 2s;
+}
+
+@keyframes jumpD {
+  0% {
+    transform: translateX(0rem);
+  } 
+  50% {
+    transform: translateX(-53rem);
+  }
+}
+
+
+@keyframes rotateA {
+  0% {
+    transform: translateY(-1rem);
+  }
+  25% {
+    transform: translateY(-10rem);
+  }
+  50% {
+    transform: translateY(-12rem) rotateZ(45deg);
+  }
+  75% {
+    transform: translateY(-12rem) rotateZ(-45deg);
+  }
+}

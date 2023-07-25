@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Devil & I</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/vendor.js" defer></script>
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <section id="health-levels">
+      <div class="player">
+        <h2>ANTONIO'S HEALTH</h2>
+        <div class="progress-container">
+          <progress id="antonio-health" max="100" value="100">100%</progress>
+        </div>
+      </div>
+      <div class="player">
+        <h2>THE DEVIL'S HEALTH</h2>
+        <div class="progress-container">
+          <progress id="devil-health" max="100" value="100">100%</progress>
+        </div>
+      </div>
+    </section>
+    <section id="canvas">
+      <div id="player1">
+        <img class="antonio" src="assets/images/MojaSlika.jpg" />
+      </div>
+      <div id="player2">
+        <img class="the-devil" src="assets/images/devil.png" />
+      </div>
+    </section>
+    <section id="controls">
+        <button id="attack">ATTACK</button>
+        <button id="strong-attack">STRONG ATTACK</button>
+        <button id="heal">HEAL</button>
+    </section>
+  </body>
+</html>
